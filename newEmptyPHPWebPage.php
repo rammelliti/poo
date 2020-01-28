@@ -189,6 +189,61 @@
             //AVEC UN SAUT DE LIGNE
             echo 'clé : '.$cle.', valeur: '.$val.'<br>';
             
-        }$tableau = array('A1'=>'Jean','B2'=>'Robert',3=>'Paul','Toto'=>'Joe','H'=>'Alain');
-        if ($a=array_search('Robert', $tableau))
-                echo $a;
+        }
+        
+        $tableau = array('A1'=>'Jean','B2'=>'Robert',3=>'Paul','Toto'=>'Joe','H'=>'Alain');
+        if ($cle_element=array_search('Robert', $tableau))
+                echo $cle_element;
+        
+        /// autre exemple
+        $tableau = array('Jean','Robert','Paul','Joe','Alain'); 
+        $cle_element=array_search('Robert', $tableau);
+        echo "La clé de l'élément recherché est : ".$cle_element;
+        
+        
+        ///// F- Decouper une chaine dans un tableau
+        //////// explode() permet de découper une chaine dans un tableau en utilisant un séparation
+        $ensemble="1;2;3;4;5";
+        $tableau = explode(";",$ensemble);
+        echo "La première valeur du tableau est : ".$tableau[0];
+        echo"La dernière valeur du tableau est :  ".$tableau[count ($tableau)-1];
+        
+        $ensemble="1;2;3;4;5";
+        $tableau = explode(";",$ensemble);
+        echo "Les valeurs du tableau sont : ";
+        foreach ($tableau as $valeur) {
+            echo $valeur.";";}
+            echo '<br>';
+        ////Regrouper les valeurs d'un tableau dans une chaine
+            //////implode() permet de regroupper les valeurs d'un tableau dans une chaine en utilisant un séparateur
+        $tableau = array('Jean','Robert','Paul');
+        $chaine=implode($tableau,";");
+        echo "<br>Les nom sont : ".$chaine;
+        
+
+        ////H découper une chaine en morceaux de longeur fixe
+        ///// str_split() permet de découper une chaine en morceau de longeur fixe dans 
+        ///// parametre indiquant la taille des morceaux de chaine.
+       $ensemble="1;2;3;4;5";
+       echo "<br> Les éléments sont :";
+       $tableau=str_split($ensemble,2);
+       foreach ($tableau as $valeur) {
+           echo $valeur." ";  
+        }
+        
+        ///// I-  ajouter des éléments à la fin du tableau
+        /// array_push()permet d'ajouter un ou plusieur éléments à la fin du tableau
+        $tableau = array('Jean','Robert','Paul'); 
+        array_push($tableau, 'Alain','Joe');
+        echo"<br> Tableau avec valeur ajouté : ";
+        foreach ($tableau as $valeur) {
+           echo $valeur." ";  
+        }
+        
+        /////// J-  Suppression d'un élément à la fin du tableau
+        $tableau = array('Jean','Robert','Paul'); 
+        $supp=array_pop($tableau);
+        echo "<br>Le nom supprimé : ".$supp; 
+        
+        $tableau = array('Jean','Robert','Paul'); 
+        
