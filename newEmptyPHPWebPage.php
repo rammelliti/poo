@@ -246,4 +246,27 @@
         echo "<br>Le nom supprimé : ".$supp; 
         
         $tableau = array('Jean','Robert','Paul'); 
+        echo "<br>Avant suppression, nb éléments : ".count($tableau)."<br>";
+        $nombre_elements= count($tableau);
+        for ($i=0;$i<$nombre_elements;$i++){
+            $nom=array_pop($tableau);
+        }
+        echo " La derniere nom supprimé est : ".$nom."<br>";
+        echo "aprés supprission, nb éléments est : ".count($tableau);
+        
+        ///// K-  Sélection aléatoire d'un élément du tableau
+        //// array_rand() permet de séléctionner de maniere aléatoire un
+        // ou plusieur éléments d'un tableau et de retourner le clé correspondante
+         $tableau = array('Jean','Robert','Paul'); 
+         $cle_aleatoire= array_rand($tableau);
+         echo "<br> Nom séléctionné au hasard : ".$tableau[$cle_aleatoire];
+         
+         ////Le parametre nombre_selectionne est optionnel
+         ///par defaut il vaut 1 .il correspond au nombre de valeurs a predre au hasard .
+         /// voici un exemple l'utulisant
+          $tableau = array('Jean','Robert','Paul'); 
+           $tableau_cle_aleatoire= array_rand($tableau,2); 
+          echo "<br> Premier nom : ".$tableau[$tableau_cle_aleatoire[0]];
+          echo "<br> Deuxieme nom : ".$tableau[$tableau_cle_aleatoire[1]];
+          
         
