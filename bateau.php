@@ -6,10 +6,7 @@
     </head>
     <body>
         <?php
-        String toString();
-        {
-             
-        }
+        
         ?>
     </body>
 </html>

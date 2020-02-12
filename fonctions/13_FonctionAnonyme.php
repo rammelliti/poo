@@ -27,3 +27,15 @@ array_walk($data, function(&$item){
 ////// affichage de tableau modifié
 var_dump($data);
     
+/////////////fonction use ******************************************
+$nom='Robert';
+///declaration des fonctions
+$fonction1= function(){
+     echo "<p>Bonjour ".$nom."!</p>";
+};
+
+$fonction2= function() use ($nom){
+     echo "<p>Bonjour ".$nom."!</p>";
+};
+$fonction1();////sans use erreur
+$fonction2();///// avec use sa marche

@@ -268,5 +268,4 @@
            $tableau_cle_aleatoire= array_rand($tableau,2); 
           echo "<br> Premier nom : ".$tableau[$tableau_cle_aleatoire[0]];
           echo "<br> Deuxieme nom : ".$tableau[$tableau_cle_aleatoire[1]];
-          
         
