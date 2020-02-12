@@ -1,8 +1,16 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+function echange(&$a,&$b):void {
+    if($a===$b){
+        return;
+    }
+    $c=$a;
+    $a=$b;
+    $b=$c;
+    
+}
+$x=1;$y=2;
+var_dump(echange($x, $y),$x,$y);
+
+
 
