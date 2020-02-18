@@ -1,6 +1,6 @@
 <?php
 ////déclaration d'une fonction retournant un type string ou null
-//// et prenant en paramètre un typestring ou null
+//// et prenant en paramètre un typenstring ou null
 function test(?string $name): ?string {
     return $name;
 }

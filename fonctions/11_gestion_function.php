@@ -7,7 +7,7 @@ function affiche_parametres($parametre1,$parametre2){
 affiche_parametres("Bonjour", "Robert");
 
 ////------------------------------------------
-/*
+
 function affiche_nombre_parametres($parametre1,$parametre2){
     echo " Le nombre d'argument est : ".func_num_args()."<br/>"; 
 }

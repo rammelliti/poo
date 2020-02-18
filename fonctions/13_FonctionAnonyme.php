@@ -39,3 +39,7 @@ $fonction2= function() use ($nom){
 };
 $fonction1();////sans use erreur
 $fonction2();///// avec use sa marche
+
+/////fonction dynamique interdite
+$func='func_num_args';
+$func();
