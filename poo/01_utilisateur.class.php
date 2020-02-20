@@ -1,9 +1,9 @@
 <?php
 class Utilisateur{
-private $nom;
-private $prenom;
-private $langue='fr-FR';
-private $timestamp;
+    private $nom;
+    private $prenom;
+    private $langue='fr-FR';
+    private $timestamp;
 
 
 public function __construct($prenom,$nom){ 
