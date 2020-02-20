@@ -9,3 +9,8 @@ echo "{$moi->information()} </br>";
 
 $moi->setNom(strtoupper($moi->getNom()));
 echo "{$moi->getNom()} </br>";
+
+$info=(NEW Utilisateur('Victor','Hugo'))->information();
+echo "{$info} </br>";
+ 
+echo  "$moi </br>";
